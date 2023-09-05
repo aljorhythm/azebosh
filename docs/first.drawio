@@ -1,0 +1,135 @@
+<mxfile host="65bd71144e">
+    <diagram id="aaYpiQdPAg0ZKK3Oqne3" name="Page-1">
+        <mxGraphModel dx="818" dy="471" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="20" value="add message (room-1, me, 'hello')" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="login(credentials)&amp;nbsp;&lt;br&gt;return: me" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="157" y="282" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="room&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+                    <mxGeometry x="339" y="26" width="364" height="209" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="room&lt;br&gt;&lt;br&gt;&lt;span style=&quot;text-align: left;&quot;&gt;id: ID&lt;br&gt;owner: user.ID&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="416" y="90" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="members&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;id: ID&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;room: room.ID&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="573" y="47" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="create room (me)" style="edgeStyle=none;html=1;" edge="1" parent="1" source="7" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="104" y="73" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="user2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="100.5" y="133" width="48" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;" edge="1" parent="1" source="15" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="create room (me)&lt;br&gt;Return: { id: room-1 }" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="17">
+                    <mxGeometry x="-0.0389" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="user3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="153" y="342" width="48" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="69" y="175" width="48" height="83" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="21">
+                    <mxGeometry width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="user1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="21">
+                    <mxGeometry y="57" width="48" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="user&lt;br&gt;&lt;br&gt;id: ID" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+                    <mxGeometry x="341" y="291" width="253" height="116" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="add room member(room-1, user3)" style="edgeStyle=none;html=1;entryX=0.002;entryY=0.854;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="15" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="example&lt;br&gt;&lt;br&gt;room-1 | user 3" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="575" y="127" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="identity" style="whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="343" y="69" width="70" height="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="add message (room-1, secret, 'hello')" style="edgeStyle=none;html=1;" edge="1" parent="1" source="31" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="159" y="719" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="room&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+                    <mxGeometry x="341" y="463" width="585" height="209" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="room&lt;br&gt;&lt;br&gt;&lt;span style=&quot;text-align: left;&quot;&gt;id: ID&lt;br&gt;owner: user.ID&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="418" y="527" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="members&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;id: ID&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;secret: string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;room: room.ID&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="575" y="484" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="create room (me)" style="edgeStyle=none;html=1;" edge="1" parent="1" source="36" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="106" y="510" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="user2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="102.5" y="570" width="48" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;" edge="1" parent="1" source="42" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="create room (me)&lt;br&gt;Return: { id: room-1 }" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="-0.0389" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&lt;i&gt;user&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="159" y="779" width="41" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="71" y="612" width="48" height="83" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="41">
+                    <mxGeometry width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="user1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="41">
+                    <mxGeometry y="57" width="48" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="add room member(room-1, user3)" style="edgeStyle=none;html=1;entryX=0.002;entryY=0.854;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="42" target="32">
+                    <mxGeometry x="-0.0032" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="example&lt;br&gt;&lt;br&gt;room:room-1 secret: 134asf3124" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="577" y="564" width="124" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="message&lt;br&gt;&lt;br&gt;content: string&lt;br&gt;author: member.ID&lt;br&gt;room: roomID&lt;br&gt;created_at: timestamp" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="746" y="495" width="124" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="view messages(room-1, secret): Message[]&lt;br&gt;&lt;br&gt;[&lt;br&gt;{&lt;br&gt;content: 'hello', created_at}&lt;br&gt;]" style="edgeStyle=none;html=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="49">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="429.1744384765625" y="672.6692352294922" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="369" y="866" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;i&gt;user&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="924" width="41" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
