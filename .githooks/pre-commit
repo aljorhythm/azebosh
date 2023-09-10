@@ -1,3 +1,15 @@
 #!/bin/sh
 
-just test
+# Function to check if there are unstaged changes
+function has_unstaged_changes() {
+  local unstaged_changes
+  unstaged_changes=$(git diff --exit-code)
+  [ $? -ne 0 ] || [ -n "$unstaged_changes" ]
+}
+
+if has_unstaged_changes; then
+  echo "Error: There are unstaged changes. Commit all changes before proceeding."
+  exit 1
+fi
+
+just tests-unit

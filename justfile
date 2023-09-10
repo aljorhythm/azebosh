@@ -31,9 +31,22 @@ kill-server:
 
 wait-server:
     #!/usr/bin/env bash
-    until curl -o /dev/null --silent --head --fail ${BASE_URL}; do
-        echo "Waiting for response..."
-        sleep 5  # Wait for 5 seconds before retrying
+    MAX_RETRIES=3
+    retries=0
+
+    while true; do
+        if curl -o /dev/null --silent --head --fail "${BASE_URL}"; then
+            echo "${BASE_URL} is available."
+            break
+        else
+            echo "${BASE_URL} Waiting for response..."
+            retries=$((retries + 1))
+            if [ $retries -ge $MAX_RETRIES ]; then
+                echo "${BASE_URL} Max retries reached. Exiting."
+                exit 1
+            fi
+            sleep 5
+        fi
     done
 
 tests-browser-re-serve:

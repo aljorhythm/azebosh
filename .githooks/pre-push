@@ -1,3 +1,25 @@
 #!/bin/sh
 
+function has_unstaged_changes() {
+  local unstaged_changes
+  unstaged_changes=$(git diff --exit-code)
+  [ $? -ne 0 ] || [ -n "$unstaged_changes" ]
+}
+
+function has_staged_changes() {
+  local staged_changes
+  staged_changes=$(git diff --cached --exit-code)
+  [ $? -ne 0 ] || [ -n "$staged_changes" ]
+}
+
+if has_unstaged_changes; then
+  echo "Error: There are unstaged changes. Commit all changes before pushing."
+  exit 1
+fi
+
+if has_staged_changes; then
+  echo "Error: There are staged changes. Commit all changes before pushing."
+  exit 1
+fi
+
 just tests-browser-re-serve
