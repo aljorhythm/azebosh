@@ -1,6 +1,7 @@
 set dotenv-load
 
 setup:
+    git config core.hooksPath .githooks
     pnpm i
     pnpx playwright install --with-deps chromium
 
